@@ -220,8 +220,4 @@ while run:
         except FileNotFoundError:
             print("Désolé le chemin d'accès n'existe pas")
 
-    if inp1 == "wget" and inp2 != "":
-        url = inp2
-        r = requests.get(url, allow_redirects=True)
-
-        open('facebook.ico', 'wb').write(r.content)
+    
